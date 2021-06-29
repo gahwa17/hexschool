@@ -33,7 +33,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style-type: none;
 }
 blockquote, q {
 	quotes: none;
@@ -134,11 +134,14 @@ body{
 }
 
 /*** Course ***/
-.course ul{
+.course-item{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+}
+.course .item .img ul{
+    list-style-type: disc;
 }
 .item{
     height: 330px;
@@ -146,25 +149,28 @@ body{
     margin: 50px 0px 50px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 3px rgb(214, 214, 214);
     border-radius: 5px;
 }
-.item .img{
-    width: fit-content;
-    height: fit-content;
-    padding: 20px;
+img{
+    max-width: 100%;
+    max-height: 100%;
+    margin:auto;
+}
+.content{
+    margin:0px 23px 23px 23px;
+    line-height: 1.2;
+}
+.content ul{
+    list-style-type: disc;
 }
 .item h1{
     text-align: center;
     font-size: large;
     font-weight: bold;
     margin-bottom: 10px;
-}
-.item p{
-    padding: 0px 20px;
-    margin-bottom: 20px;
 }
 
 /*** Table ***/
