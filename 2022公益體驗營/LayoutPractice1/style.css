@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing:border-box;
+}
+
+*{
+    /* outline: solid 0.5px; */
+    list-style-type: none;
+    text-decoration:none;
+    color: #3F5D45;
+    font-family: "PingFang TC";
+}
+
+.wrap {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0;
+}
+
+.logo {
+    width: 171px;
+    height: 27px;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 215px;
+}
+
+.menu li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.cart {
+    margin-left: 80px;
+}
+
+/* Banner */
+.banner {
+    margin: 0 auto;
+}
+
+/* Main-content */
+.main-content {
+    display: flex;
+    margin-top: 60px;
+}
+
+.main-content h2{
+    width: 300px;
+}
+
+/* Main-content : aside-menu */
+.aside-menu {
+    text-align: center;
+    font-weight: bold;
+    width: 300px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.aside-menu h2{
+    padding: 16px 0px;
+    color: #FFF;
+    background-color: #3F5D45;
+}
+
+.aside-menu li a {
+    display: block;
+    padding: 16px 0px;
+    border: 1px solid #EAF0ED;
+}
+
+.focus {
+    background-color: #EAF0ED;
+}
+
+/* Main-content : product-list */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item{
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.product-item img {
+    vertical-align: middle;
+}
+
+.sticker {
+    position: absolute;
+    left: 20px;
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+    width: 36px;
+    background: #3F5D45;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.favorite {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+.info h3 {
+    text-align: center;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    padding: 14px 0;
+    font-size: 20px;
+}
+
+.name {
+    width: 170px;
+}
+
+.price {
+    width: 130px;
+    font-weight: 600;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 16px 90px;
+    background: #EAF0ED;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Main-content : pagination */
+.pagination {
+    display: flex;
+    justify-self: left;
+    flex-direction: row-reverse;
+}
+
+.pagination a{
+    display: block;
+    border: 1px solid #EAF0ED;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding: 16px 0;
+    height: 60px;
+    width: 60px;
+}
+
+.page:hover {
+    border: 1px solid #EAF0ED;
+    background: #3F5D45;
+    color: #FFF;
+}
