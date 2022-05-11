@@ -157,7 +157,6 @@ table {
     width: 36px;
     background: #3F5D45;
     color: #FFF;
-    font-size: 16px;
     font-weight: 600;
     padding: 8px;
 }
@@ -229,7 +228,7 @@ table {
     margin-top: 60px;
 }
 
-.footer-top {
+.footer-subscribe {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -292,9 +291,48 @@ input[type="button"] {
 }
 
 
-.footer-bottom {
+.footer-contact {
     width: 1024px;
-    height: 340px;
     background: #EAF0ED;
+    position: relative;
+    padding: 38px 120px 30px 120px;
 }
 
+.slogan {
+    position: absolute;
+    top: 30px;
+    right: 120px;
+    letter-spacing: 6px;
+    line-height: 1.5;
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer-contact-logo{
+    width: 171px;
+    height: 27px;
+    margin-bottom: 115px;
+}
+
+.contact {
+    margin-bottom: 30px;
+    line-height: 1.5;
+    
+}
+
+#media {
+    display: flex;
+    align-items: center;
+}
+
+#media a{
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.copyright {
+    margin-left: auto;
+}
