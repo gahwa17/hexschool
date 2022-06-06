@@ -6,14 +6,32 @@
     padding-left: 16px;
     margin: 0 auto;
 }
+/* 表頭設計 */
+//表頭背景撐滿版
+.header {
+    background: url(../img/home.svg), url(../img/bg_home.svg);
+    background-repeat: no-repeat;
+}
 
+//導覽列
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 24px 0;
+    img {
+        height: 40px;
+    }
+}
+
+/* 表尾設計 */ 
 .footer {
     background-color: white;
     text-align: center;
     .footer-box {
         background: url(../img/home_footer.svg);
         height: 503px;
-        background-position: center;
+        background-position: center top;
         background-repeat: no-repeat;
         background-size: 100%;
         
@@ -21,6 +39,19 @@
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
-        align-content: center;    
+        align-content: center;
+    }
+    h3 {
+        margin-top: 260px;
+    }
+    a {
+        margin-top: 48px;
+        margin-bottom: 100px;
+    }
+    p {
+        padding: 16px 0;
     }
 }
+
+
+

@@ -1,0 +1,55 @@
+/* 顏色 */ 
+$base-color: #56C4C5;
+$highlight-color: #FF5D50;
+
+/* 字體 */
+.fz-bold {
+    font-weight: 700;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fz-26 {
+    font-size: 26px;
+}
+
+.fz-32 {
+    font-size: 32px;
+}
+
+.fz-46 {
+    font-size: 46px;
+}
+
+/* 按鈕 */
+.btn {
+    border-radius: 50px;
+    padding: 12px 32px;
+    color: white;
+}
+
+.btn-base {
+    background: $base-color;
+    border: $base-color 1px solid;
+    &:hover{
+        background: white;
+        color: $base-color;
+        border: $base-color 1px solid;
+    }
+}
+
+.btn-highlight {
+    background: $highlight-color;
+    border: $highlight-color 1px solid;
+    &:hover{
+        background: white;
+        color: $highlight-color;
+        border: $highlight-color 1px solid;
+    }
+}
