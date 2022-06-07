@@ -6,10 +6,14 @@
     padding-left: 16px;
     margin: 0 auto;
 }
+
 /* 表頭設計 */
 //表頭背景撐滿版
 .header {
+    height: 105vh;
     background: url(../img/home.svg), url(../img/bg_home.svg);
+    background-size: 532px 534px, 851px 768px;
+    background-position: top 118px right 140px, top right;
     background-repeat: no-repeat;
 }
 
@@ -21,6 +25,49 @@
     padding: 24px 0;
     img {
         height: 40px;
+    }
+}
+
+//表頭資訊
+.header-info {
+    margin: 158px 0;
+    h1 {
+        color: $base-color;
+    }
+    p {
+        padding: 8px 0 16px 0;
+    }
+}
+/* 網頁內容 */
+//三大平台
+.platform {
+    h3 {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    h5 {
+        font-weight: 700;
+        font-size: 24px;
+        margin: 24px 0;
+    }
+    p {
+        text-align: center;
+        letter-spacing: 0px;
+        color: $text-color;
+    }
+    img {
+        height: 90px;
+        width: 90px;
+    }
+    .platform-card {
+        display: flex;
+        justify-content: space-between;
+    }
+    .platform-item {
+        // width: 245px;
+        display: flex;
+        flex-direction: column;
+        align-items: center
     }
 }
 
