@@ -15,29 +15,51 @@
     background-size: 532px 534px, 851px 768px;
     background-position: top 118px right 140px, top right;
     background-repeat: no-repeat;
+    @media(max-width:768px) {
+        background: url(../img/home.svg), url(../img/bg_home_sm.svg);
+        background-size: 304px 305px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    //導覽列
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 24px 0;
+        img {
+            height: 40px;
+        }
+        @media(max-width:768px) {
+            a {
+                padding: 8px 32px;
+            }
+            img {
+                height: 24px;
+            }
+            p {
+                font-size: 32px;
+            }
+        }
+    }
+
+    //表頭資訊
+    .header-info {
+        margin: 158px 0;
+        h1 {
+            color: $base-color;
+        }
+        p {
+            padding: 8px 0 16px 0;
+        }
+        @media(max-width:768px) {
+            margin: 0px;
+        }
+    }
 }
 
-//導覽列
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 24px 0;
-    img {
-        height: 40px;
-    }
-}
 
-//表頭資訊
-.header-info {
-    margin: 158px 0;
-    h1 {
-        color: $base-color;
-    }
-    p {
-        padding: 8px 0 16px 0;
-    }
-}
 /* 網頁內容 */
 //三大平台
 .platform {
@@ -71,7 +93,8 @@
         align-items: center
     }
 }
-//角色
+
+//服務角色
 .role {
     margin-bottom: 100px;
     text-align: center;
@@ -107,6 +130,34 @@
                 flex-direction: column;
             }
         }
+    }
+}
+
+//服務列表
+.service {
+    display: flex;
+
+    &-content {
+        width: 50%;
+    }
+
+    &-list {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &-card {
+        img {
+            height: 52px;
+            width: 52px;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        height: 280px;
+        padding: 48px 24px;
     }
 }
 

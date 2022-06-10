@@ -2,6 +2,8 @@
 $base-color: #56C4C5;
 $highlight-color: #FF5D50;
 $text-color: #747474;
+$yellow: #FFD153;
+$light-black: #221E1F;
 
 /* 字體 */
 .fz-bold {
@@ -26,6 +28,10 @@ $text-color: #747474;
 
 .fz-48 {
     font-size: 46px;
+}
+
+.light-black {
+    color: $light-black;
 }
 
 /* 按鈕 */
@@ -53,4 +59,13 @@ $text-color: #747474;
         color: $highlight-color;
         border: $highlight-color 1px solid;
     }
+}
+
+/* Margin */
+.mt16 {
+    margin-top: 16px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
 }

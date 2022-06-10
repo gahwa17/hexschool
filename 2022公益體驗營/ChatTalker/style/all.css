@@ -80,6 +80,10 @@ table {
   font-size: 46px;
 }
 
+.light-black {
+  color: #221E1F;
+}
+
 /* 按鈕 */
 .btn {
   border-radius: 50px;
@@ -109,9 +113,19 @@ table {
   border: #FF5D50 1px solid;
 }
 
+/* Margin */
+.mt16 {
+  margin-top: 16px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: black 1px solid;
 }
 
 body {
@@ -150,7 +164,16 @@ sub {
   background-repeat: no-repeat;
 }
 
-.nav {
+@media (max-width: 768px) {
+  .header {
+    background: url(../img/home.svg), url(../img/bg_home_sm.svg);
+    background-size: 304px 305px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+.header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,20 +185,38 @@ sub {
   padding: 24px 0;
 }
 
-.nav img {
+.header .nav img {
   height: 40px;
 }
 
-.header-info {
+@media (max-width: 768px) {
+  .header .nav a {
+    padding: 8px 32px;
+  }
+  .header .nav img {
+    height: 24px;
+  }
+  .header .nav p {
+    font-size: 32px;
+  }
+}
+
+.header .header-info {
   margin: 158px 0;
 }
 
-.header-info h1 {
+.header .header-info h1 {
   color: #56C4C5;
 }
 
-.header-info p {
+.header .header-info p {
   padding: 8px 0 16px 0;
+}
+
+@media (max-width: 768px) {
+  .header .header-info {
+    margin: 0px;
+  }
 }
 
 /* 網頁內容 */
@@ -282,6 +323,46 @@ sub {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service-content {
+  width: 50%;
+}
+
+.service-list {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  height: 280px;
+  padding: 48px 24px;
+}
+
+.service-card img {
+  height: 52px;
+  width: 52px;
 }
 
 /* 表尾設計 */
