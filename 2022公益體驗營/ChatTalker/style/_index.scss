@@ -136,13 +136,13 @@
 //服務列表
 .service {
     display: flex;
+    align-items: center;
 
     &-content {
         width: 50%;
     }
 
     &-list {
-        width: 50%;
         display: flex;
         flex-wrap: wrap;
     }
