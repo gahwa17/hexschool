@@ -2,6 +2,7 @@
 $base-color: #56C4C5;
 $highlight-color: #FF5D50;
 $text-color: #747474;
+$grey: #DDDDDD;
 $yellow: #FFD153;
 $light-black: #221E1F;
 
@@ -68,4 +69,12 @@ $light-black: #221E1F;
 
 .mb24 {
     margin-bottom: 24px;
+}
+
+.mb48 {
+    margin-bottom: 48px;
+}
+
+.pb48  {
+    padding-bottom: 48px;
 }
