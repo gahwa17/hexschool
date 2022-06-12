@@ -10,7 +10,7 @@
 .header-charge {
     height: 100vh;
     background: url(../img/banner.svg);
-    background-size: 80%;
+    background-size: 70%;
     background-position: right top;
     background-repeat: no-repeat;
 
@@ -34,7 +34,6 @@
 
 @media(max-width:768px) {
     .header-charge {
-        margin-bottom: 92px;
         height: 150vh;
         background: url(../img/banner_sm.svg);
         background-position: top center;

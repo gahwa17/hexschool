@@ -248,9 +248,9 @@ sub {
 
 @media (max-width: 768px) {
   .header {
-    height: 100vh;
+    height: 135vh;
     margin-bottom: 92px;
-    background: url(img/home.svg), url(img/bg_home_sm.svg);
+    background: url(../img/home.svg), url(../img/bg_home_sm.svg);
     background-size: 304px 305px;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -322,6 +322,11 @@ sub {
 }
 
 @media (max-width: 768px) {
+  .platform .platform-item {
+    padding: 0px 16px;
+    padding-right: 16px;
+    margin-bottom: 24px;
+  }
   .platform .platform-card {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -606,7 +611,7 @@ sub {
 .header-charge {
   height: 100vh;
   background: url(../img/banner.svg);
-  background-size: 80%;
+  background-size: 70%;
   background-position: right top;
   background-repeat: no-repeat;
 }
@@ -636,7 +641,6 @@ sub {
 
 @media (max-width: 768px) {
   .header-charge {
-    margin-bottom: 92px;
     height: 150vh;
     background: url(../img/banner_sm.svg);
     background-position: top center;

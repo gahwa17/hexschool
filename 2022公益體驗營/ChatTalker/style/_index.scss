@@ -45,9 +45,9 @@
 
 @media(max-width:768px) {
     .header {
-        height: 100vh;
+        height: 135vh;
         margin-bottom: 92px;
-        background: url(img/home.svg), url(img/bg_home_sm.svg);
+        background: url(../img/home.svg), url(../img/bg_home_sm.svg);
         background-size: 304px 305px;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -100,6 +100,11 @@
         align-items: center
     }
     @media(max-width:768px) {
+        .platform-item {
+            padding: 0px 16px;
+            padding-right: 16px;
+            margin-bottom: 24px;
+        }
         .platform-card {
             justify-content: center;
         }
@@ -162,7 +167,6 @@
         }
     }
 }
-
 
 //服務列表
 .service {
@@ -262,8 +266,6 @@
         }
     }
 }
-
-
 
 /* 表尾設計 */ 
 .footer {
