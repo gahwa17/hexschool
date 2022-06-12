@@ -15,34 +15,16 @@
     background-size: 532px 534px, 851px 768px;
     background-position: top 118px right 140px, top right;
     background-repeat: no-repeat;
-    @media(max-width:768px) {
-        height: 50vh;
-        margin-bottom: 92px;
-        background: url(../img/home.svg), url(../img/bg_home_sm.svg);
-        background-size: 304px 305px;
-        background-position: bottom;
-        background-repeat: no-repeat;
-    }
 
     //導覽列
     .nav{
         display: flex;
         justify-content: space-between;
         align-content: center;
+        align-items: center;
         padding: 24px 0;
         img {
             height: 40px;
-        }
-        @media(max-width:768px) {
-            a {
-                padding: 8px 32px;
-            }
-            img {
-                height: 24px;
-            }
-            p {
-                font-size: 32px;
-            }
         }
     }
 
@@ -56,11 +38,34 @@
             padding: 8px 0 16px 0;
         }
         @media(max-width:768px) {
-            margin: 0px;
+            margin: 32px;
         }
     }
 }
 
+@media(max-width:768px) {
+    .header {
+        height: 100vh;
+        margin-bottom: 92px;
+        background: url(../img/home.svg), url(../img/bg_home_sm.svg);
+        background-size: 304px 305px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    .nav {
+        background: white;
+        border-bottom: 2px solid $yellow;
+        a {
+            padding: 8px 32px;
+        }
+        img {
+            height: 24px;
+        }
+        p {
+            font-size: 32px;
+        }
+    }
+}
 
 /* 網頁內容 */
 //三大平台
@@ -98,9 +103,6 @@
         .platform-card {
             justify-content: center;
         }
-        .platform-item {
-            padding: 0px 32px 32px 0px;
-        }
     }
 
     @media(max-width:376px) {
@@ -135,27 +137,32 @@
         justify-content: space-around;
     }
     .role-item {
-        box-shadow: 2px 3px 2px 1px #00000014;
+        box-shadow: 2px 3px 2px 1px $shadow;
         border-radius: 12px;
         display: flex;
+        width: 24%;
         flex-direction: column;
         margin-bottom: 24px;
         img {
-            height: 260px;
             border-radius: 12px 12px 0 0;
         }
         h5 {
             color: $base-color;
             padding: 16px 0;
         }
-
+        p {
+            padding: 0px 16px 24px 16px;
+        }
         @media (max-width:768px) {
-            .role-item {
-                flex-direction: column;
-            }
+            padding: 0px 16px;
+            width: 50%;
+        }
+        @media (max-width:376px) {
+            width: 100%;
         }
     }
 }
+
 
 //服務列表
 .service {
@@ -166,6 +173,7 @@
 
     &-content {
         width: 50%;
+        padding-left: 137px
     }
 
     &-list {
@@ -194,6 +202,7 @@
         .service-content {
             width: 100%;
             text-align: center;
+            padding: 0px;
         }
         .service-list {
             width: 100%;
@@ -220,12 +229,13 @@
     }
     &-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     &-item {
         width: 33%;
         padding: 0px 32px 24px 32px;
-        box-shadow: 5px 5px 5px #00000014;
+        box-shadow: 10px 10px 10px 5px $shadow;
         .avatar {
             height: 80px;
             width: 80px;
@@ -243,7 +253,17 @@
     .star {
         display: flex;
     }
+
+    @media(max-width:768px) {
+        .comment-item {
+            margin-bottom: 80px;
+            padding: 16px 48px;
+            width: 100%;
+        }
+    }
 }
+
+
 
 /* 表尾設計 */ 
 .footer {

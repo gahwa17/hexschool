@@ -1,0 +1,152 @@
+.container {
+    max-width: 1120px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin: 0 auto;
+}
+
+/* 表頭設計 */
+//表頭背景撐滿版
+.header-charge {
+    height: 100vh;
+    background: url(../img/banner.svg);
+    background-size: 80%;
+    background-position: right top;
+    background-repeat: no-repeat;
+
+    //導覽列
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 24px 0;
+        img {
+            height: 40px;
+        }
+    }
+
+    //表頭資訊
+    .charge-info {
+        margin-top: 92px;
+    }
+}
+
+@media(max-width:768px) {
+    .header-charge {
+        margin-bottom: 92px;
+        height: 150vh;
+        background: url(../img/banner_sm.svg);
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .nav {
+        background: white;
+        border-bottom: 2px solid $yellow;
+        a {
+            padding: 8px 32px;
+        }
+        img {
+            height: 24px;
+        }
+        p {
+            font-size: 32px;
+        }
+    }
+}
+
+/* 網頁內容 */
+//方案選擇
+.charge-project {
+    text-align: center;
+    margin-bottom: 100px;
+    //基本與標準版
+    .choice-list {
+        margin: 48px 84px;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+    .project-desc {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+    }
+    //方案內部資訊
+    .project-info {
+        padding: 10px 19px 32px 29px;
+        border-radius: 1%;
+        hr {
+            border: 1px solid $grey;
+        }
+    }
+    .project-price {
+        margin: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .subscribe {
+        padding: 24px 32px;
+    }
+    .equal {
+        font-size: 29px;
+    }
+    .project-service {
+        margin-bottom: 32px;
+        text-align: left;
+        li {
+            margin-bottom: 16px;
+        }
+        li:before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(../img/icon_check.svg) no-repeat center/contain;
+            margin-right: 12px;
+        }
+    }
+    @media(max-width: 768px) {
+        .project-desc {
+            flex-direction: column;
+        }
+        
+        .choice-btn a{
+            margin-left: 16px;
+            width: 146px;
+        }
+    }
+}
+
+//常見問題
+.common-question {
+    margin-bottom: 100px;
+    h3{
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .qa-card {
+        box-shadow: 0px 2px 5px 5px $shadow;
+        padding: 16px 32px;
+        margin-bottom: 16px;
+    }
+
+    .qa-link {
+        display: flex;
+        justify-content: space-between;
+    }
+    .accordion-btn {
+        cursor: pointer;
+        border: none;
+    }
+
+    .ans {
+        margin: 24px 0;
+    }
+
+}

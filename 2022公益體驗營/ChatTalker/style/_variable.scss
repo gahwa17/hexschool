@@ -5,10 +5,15 @@ $text-color: #747474;
 $grey: #DDDDDD;
 $yellow: #FFD153;
 $light-black: #221E1F;
+$shadow: #00000014;
 
 /* 字體 */
 .fz-bold {
     font-weight: 700;
+}
+
+.fz-12 {
+    font-size: 12px;
 }
 
 .fz-16 {
@@ -20,7 +25,7 @@ $light-black: #221E1F;
 }
 
 .fz-24 {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .fz-32 {
@@ -33,6 +38,10 @@ $light-black: #221E1F;
 
 .light-black {
     color: $light-black;
+}
+
+.base-color {
+    color: $base-color;
 }
 
 /* 按鈕 */
@@ -52,6 +61,26 @@ $light-black: #221E1F;
     }
 }
 
+.btn-focused {
+    background: $base-color;
+    border: $base-color 1px solid;
+}
+
+.btn-unfocused {
+    background: white;
+    color: $base-color;
+    border: $base-color 1px solid;
+    &:hover{
+        background: $base-color;
+        color: white;
+        border: $base-color 1px solid;
+    }
+    &:active{
+        background: $base-color;
+        border: $base-color 1px solid;
+    }
+}
+
 .btn-highlight {
     background: $highlight-color;
     border: $highlight-color 1px solid;
@@ -67,8 +96,16 @@ $light-black: #221E1F;
     margin-top: 16px;
 }
 
+.mb16 {
+    margin-bottom: 16px;
+}
+
 .mb24 {
     margin-bottom: 24px;
+}
+
+.mb32 {
+    margin-bottom: 32px;
 }
 
 .mb48 {
